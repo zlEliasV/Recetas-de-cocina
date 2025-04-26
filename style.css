@@ -80,3 +80,44 @@ footer p {
   margin-right: 8px;
   font-size: 20px;
 }
+/* Modo oscuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark-mode .card {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-mode footer {
+  background-color: #333 !important;
+}
+
+.dark-mode .social-links li a {
+  color: #e0e0e0;
+}
+
+.dark-mode .social-links li a:hover {
+  color: #ff8c66;
+}
+
+.dark-mode-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+
+.dark-mode-btn:hover {
+  background-color: #444;
+}
