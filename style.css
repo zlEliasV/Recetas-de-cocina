@@ -1,0 +1,29 @@
+<style>
+  .recipes {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .card {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .card h3 {
+    margin-top: 10px;
+  }
+
+  .card p {
+    font-size: 0.9em;
+    color: #555;
+  }
+</style>
