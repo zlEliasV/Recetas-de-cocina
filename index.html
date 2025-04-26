@@ -1,69 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas de cocina</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas de cocina</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <header>
+        <nav>
+            <a href="/" class="logo">🍳 Recetas de la Tía Marta</a>
+            <ul>
+              <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+              <li><a href="#recetas"><i class="fas fa-book-open"></i> Recetas</a></li>
+              <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-
-      <section class="recipes">
+    <section class="recipes" id="recetas">
         <h2>Nuestras Recetas</h2>
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="Receta 1">
-          <h3>Pizza Casera</h3>
-          <p>Deliciosa pizza con masa casera y tus toppings favoritos.</p>
+        <div class="cards-container">
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pizza Casera">
+                <div class="card-content">
+                    <h3>Pizza Casera</h3>
+                    <p>Deliciosa pizza con masa casera y tus toppings favoritos.</p>
+                    <button class="recipe-btn">Ver Receta</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Empanadas Argentinas">
+                <div class="card-content">
+                    <h3>Empanadas Argentinas</h3>
+                    <p>Empanadas rellenas de carne jugosa y especias tradicionales.</p>
+                    <button class="recipe-btn">Ver Receta</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1633321702518-7feccafb94d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pastel de Papas">
+                <div class="card-content">
+                    <h3>Pastel de Papas</h3>
+                    <p>Clásico pastel de papas con carne picada y queso gratinado.</p>
+                    <button class="recipe-btn">Ver Receta</button>
+                </div>
+            </div>
         </div>
-      
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="Receta 2">
-          <h3>Empanadas Argentinas</h3>
-          <p>Empanadas rellenas de carne jugosa y especias tradicionales.</p>
-        </div>
-      
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="Receta 3">
-          <h3>Pastel de Papas</h3>
-          <p>Clásico pastel de papas con carne picada y queso gratinado.</p>
-        </div>
-      </section>
-    
-      <footer>
+    </section>
+
+    <footer>
         <p>Seguinos en nuestras redes sociales:</p>
         <ul class="social-links">
-          <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-          <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
         </ul>
-      </footer>
-      
+        <p class="copyright">© 2025 Recetas de Cocina por Tía Marta</p>
+    </footer>
 
-      <script>
-        window.addEventListener('scroll', function() {
-            const footer = document.querySelector('footer');
-            if (window.scrollY > 100) {
-                footer.style.backgroundColor = '#e0e0e0';
-            } else {
-                footer.style.backgroundColor = '#f8f8f8';
-            }
-        });
-    </script>
+    <button id="darkModeToggle" class="dark-mode-btn">🌙 Modo Oscuro</button>
 
-       <button id="darkModeToggle" class="dark-mode-btn">🌙 Modo Oscuro</button>
-       <script src="modo_oscuro.js"></script>
-       
+    <script src="script.js"></script>
 </body>
 </html>
