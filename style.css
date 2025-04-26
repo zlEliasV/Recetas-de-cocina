@@ -1,29 +1,82 @@
-<style>
-  .recipes {
-    text-align: center;
-    margin-top: 40px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .card {
-    display: inline-block;
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 200px;
-  }
+header {
+  background-color: #ff6347;
+  padding: 1em;
+}
 
-  .card img {
-    width: 100%;
-    border-radius: 8px;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
-  .card h3 {
-    margin-top: 10px;
-  }
+nav li {
+  margin: 0 1em;
+}
 
-  .card p {
-    font-size: 0.9em;
-    color: #555;
-  }
-</style>
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipes {
+  padding: 2em;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-links li a:hover {
+  color: #ff6600;
+}
+
+.social-links i {
+  margin-right: 8px;
+  font-size: 20px;
+}
